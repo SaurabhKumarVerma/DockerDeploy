@@ -1,11 +1,10 @@
 import React from    'react'
-import Name from './Component/Name';
 
 
 function App() {
   return (
     <div >
-      <Name />
+      <p>Saurabh</p>
     </div>
   );
 }

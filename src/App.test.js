@@ -1,14 +1,12 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import userEvent from "@testing-library/user-event";
+import App from './App'
 
-test('renders learn react link', () => {
+test("Test theme button toggle", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
-
-test('renders learn react link', () => {
-  render(<App />);
-  screen.debug();
+  const buttonEl = screen.getByText(/Current theme/i);
+    
+  userEvent.click(buttonEl);
+  expect(buttonEl).toHaveTextContent(/dark/i);
 });

@@ -8,4 +8,4 @@ before_install:
 
 
 script:
-  - docker run reacttest npm run testsssssssssssssssssssssssssssssssssssssssssssss
+  - docker run reacttest npm run test

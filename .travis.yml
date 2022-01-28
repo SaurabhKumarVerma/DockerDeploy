@@ -3,7 +3,7 @@ service:
   - docker
 
 before_install:
-  - docker build -t reacttest -f Dockkerfile.dev .
+  - docker build -t reacttest -f Dockerfile.dev .
 
 
 script:

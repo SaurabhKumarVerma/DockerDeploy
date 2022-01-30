@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import Test from './Component/Test'
 
 test('list contains 5 animals', () => {
   render(<App />);
@@ -11,4 +12,10 @@ test('list contains 5 animals', () => {
   expect(listElement).toBeInTheDocument();
   expect(listElement).toHaveClass('animals');
   expect(listItems.length).toEqual(5);
+});
+
+test('renders', () => {
+  render(<Test />);
+  const linkElement = screen.getByText(/Hello World/i);
+  expect(linkElement).toBeInTheDocument();
 });

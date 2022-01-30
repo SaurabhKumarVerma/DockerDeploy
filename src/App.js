@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Test from './Component/Test';
 
 function App() {
   return (
-    <div>
+    <>
       <ul className="animals">
         <li>Cat</li>
         <li>Whale</li>
@@ -12,7 +13,8 @@ function App() {
         <li>elephant</li>
         <li>Rhino</li>
       </ul>
-    </div>
+      <Test/>
+    </>
   );
 }
 

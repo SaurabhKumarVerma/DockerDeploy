@@ -16,6 +16,6 @@ test('list contains 5 animals', () => {
 
 test('renders', () => {
   render(<Test />);
-  const linkElement = screen.getByText(/Hello World/i);
+  const linkElement = screen.getByText(/HEY THERE/i);
   expect(linkElement).toBeInTheDocument();
 });
